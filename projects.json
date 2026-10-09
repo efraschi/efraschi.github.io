@@ -1,0 +1,1216 @@
+[
+  {
+    "id": "projet-1",
+    "category": "dop",
+    "title": "Cinematography Reel",
+    "role": "Director of Photography",
+    "year": "2026",
+    "coverImage": "./video/DoP.png",
+    "mediaType": "video",
+    "mediaUrl": "https://www.youtube.com/embed/C8GZ79G1DLo"
+  },
+  {
+    "id": "photo-6",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "Almost There",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/Almost_There.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Abstract/Almost_There.jpg"
+  },
+  {
+    "id": "photo-7",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "First Meeting",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/First_Meeting.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Abstract/First_Meeting.jpg"
+  },
+  {
+    "id": "photo-8",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "First Moon",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/First_Moon.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Abstract/First_Moon.jpg"
+  },
+  {
+    "id": "photo-9",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "Bodyscape Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/Bodyscape_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Bodyscape_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Bodyscape_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Bodyscape_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-10",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "By the Book Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/By_the_Book_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Abstract/By_the_Book_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/By_the_Book_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/By_the_Book_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/By_the_Book_4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/By_the_Book_5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-11",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "Tango Blur Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/Tango_Blur_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_5.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_6.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_7.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_8.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_9.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Tango_Blur_10.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-12",
+    "category": "photo",
+    "subcategory": "Abstract",
+    "title": "Vertigo Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Abstract/Vertigo_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Vertigo_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Vertigo_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Vertigo_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Vertigo_4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Abstract/Vertigo_5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-13",
+    "category": "photo",
+    "subcategory": "Misc",
+    "title": "1 Under Control",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Misc/1_Under_Control.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Misc/1_Under_Control.jpg"
+  },
+  {
+    "id": "photo-14",
+    "category": "photo",
+    "subcategory": "Misc",
+    "title": "2 Chaos",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Misc/2_Chaos.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Misc/2_Chaos.jpg"
+  },
+  {
+    "id": "photo-15",
+    "category": "photo",
+    "subcategory": "Misc",
+    "title": "La Lettre",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Misc/La_Lettre.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Misc/La_Lettre.jpg"
+  },
+  {
+    "id": "photo-16",
+    "category": "photo",
+    "subcategory": "Misc",
+    "title": "Flor Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Misc/Flor_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Misc/Flor_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Misc/Flor_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Misc/Flor_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-17",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Alma De Montevideo",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Alma_De_Montevideo.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Alma_De_Montevideo.jpg"
+  },
+  {
+    "id": "photo-18",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Birds Nest",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Birds_Nest.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Birds_Nest.jpg"
+  },
+  {
+    "id": "photo-19",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Emptiness",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Emptiness.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Emptiness.jpg"
+  },
+  {
+    "id": "photo-20",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Jusqu Ici Tout Va Bien",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Jusqu_Ici_Tout_Va_Bien.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Jusqu_Ici_Tout_Va_Bien.jpg"
+  },
+  {
+    "id": "photo-21",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Last Minutes",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Last_Minutes.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Last_Minutes.jpg"
+  },
+  {
+    "id": "photo-22",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Low Tide",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Low_Tide.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Low_Tide.jpg"
+  },
+  {
+    "id": "photo-23",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Neon Horizon",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Neon_Horizon.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Neon_Horizon.jpg"
+  },
+  {
+    "id": "photo-24",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "On The Brink",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/On_The_Brink.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/On_The_Brink.jpg"
+  },
+  {
+    "id": "photo-25",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "On The Rocks",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/On_The_Rocks.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/On_The_Rocks.jpg"
+  },
+  {
+    "id": "photo-26",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Patience",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Patience.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Patience.jpg"
+  },
+  {
+    "id": "photo-27",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Peligro",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Peligro.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Peligro.jpg"
+  },
+  {
+    "id": "photo-28",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Resting Time",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Resting_Time.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Resting_Time.jpg"
+  },
+  {
+    "id": "photo-29",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Run For Your Life",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Run_For_Your_Life.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Run_For_Your_Life.jpg"
+  },
+  {
+    "id": "photo-30",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Rush Hour",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Rush_Hour.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Rush_Hour.jpg"
+  },
+  {
+    "id": "photo-31",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Summer In The-City",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Summer_In_The-City.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Summer_In_The-City.jpg"
+  },
+  {
+    "id": "photo-32",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Sunset Patience",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Sunset_Patience.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Sunset_Patience.jpg"
+  },
+  {
+    "id": "photo-33",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Suspension",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Suspension.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Suspension.jpg"
+  },
+  {
+    "id": "photo-34",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Wave Sunset",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Wave_Sunset.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Wave_Sunset.jpg"
+  },
+  {
+    "id": "photo-35",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Whisper",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Whisper.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Landscapes/Whisper.jpg"
+  },
+  {
+    "id": "photo-36",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Canal Seasons Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Canal_Seasons_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Canal_Seasons_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Canal_Seasons_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Canal_Seasons_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Canal_Seasons_4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-37",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Nightfall Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Nightfall_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Nightfall_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Nightfall_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-38",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Paris Under Water Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Paris_Under_Water_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Paris_Under_Water_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Paris_Under_Water_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Paris_Under_Water_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-39",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Solo Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Solo_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Solo_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Solo_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Solo_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-40",
+    "category": "photo",
+    "subcategory": "Landscapes",
+    "title": "Weather Menace Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Landscapes/Weather_Menace_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Weather_Menace_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Weather_Menace_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Weather_Menace_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Weather_Menace_4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Landscapes/Weather_Menace_5.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-41",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Blue",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Blue.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Blue.jpg"
+  },
+  {
+    "id": "photo-42",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Chien Andalou",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Chien_Andalou.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Chien_Andalou.jpg"
+  },
+  {
+    "id": "photo-43",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Come Back Soon",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Come_Back_Soon.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Come_Back_Soon.jpg"
+  },
+  {
+    "id": "photo-44",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Doppelganger",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Doppelganger.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Doppelganger.jpg"
+  },
+  {
+    "id": "photo-45",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "El Fin Del Mundo",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/El_Fin_Del_Mundo.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/El_Fin_Del_Mundo.jpg"
+  },
+  {
+    "id": "photo-46",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Follow That Car",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Follow_That_Car.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Follow_That_Car.jpg"
+  },
+  {
+    "id": "photo-47",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Melancholia",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Melancholia.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Melancholia.jpg"
+  },
+  {
+    "id": "photo-48",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Scarlet",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Scarlet.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Scarlet.jpg"
+  },
+  {
+    "id": "photo-49",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Wake Up.JPG",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Wake_Up.JPG.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Wake_Up.JPG.jpg"
+  },
+  {
+    "id": "photo-50",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Youth Hostel",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Youth_Hostel.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Portraits/Youth_Hostel.jpg"
+  },
+  {
+    "id": "photo-51",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Disconnect Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Disconnect_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Disconnect_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Disconnect_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-52",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Gentilhomme Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Gentilhomme_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Gentilhomme_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Gentilhomme_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-53",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Jazz Mafia Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Jazz_Mafia_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Jazz_Mafia_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Jazz_Mafia_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-54",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Portrait Session Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Portrait_Session_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Portrait_Session_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Portrait_Session_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Portrait_Session_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Portrait_Session_4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-55",
+    "category": "photo",
+    "subcategory": "Portraits",
+    "title": "Waiting For The Train Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Portraits/Waiting_For_The_Train_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Waiting_For_The_Train_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Portraits/Waiting_For_The_Train_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-56",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Imprint",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Imprint.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Dance/Imprint.jpg"
+  },
+  {
+    "id": "photo-57",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Shadow Ghost",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Shadow_Ghost.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Dance/Shadow_Ghost.jpg"
+  },
+  {
+    "id": "photo-58",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "So",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/So.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Dance/So.jpg"
+  },
+  {
+    "id": "photo-59",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Travelling",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Travelling.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Dance/Travelling.jpg"
+  },
+  {
+    "id": "photo-60",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Trembling Rooftop",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Trembling_Rooftop.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Dance/Trembling_Rooftop.jpg"
+  },
+  {
+    "id": "photo-61",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Alone Together Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Alone_Together_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Dance/Alone_Together_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Dance/Alone_Together_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Dance/Alone_Together_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Dance/Alone_Together_4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-62",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Pause Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Pause_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Dance/Pause_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Dance/Pause_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Dance/Pause_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-63",
+    "category": "photo",
+    "subcategory": "Dance",
+    "title": "Performing Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Dance/Performing_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Dance/Performing_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Dance/Performing_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-64",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Istanbul Triad",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Istanbul_Triad.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Night/Istanbul_Triad.jpg"
+  },
+  {
+    "id": "photo-65",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Last One Standing",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Last_One_Standing.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Night/Last_One_Standing.jpg"
+  },
+  {
+    "id": "photo-66",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "On The Other Side",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/On_The_Other_Side.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Night/On_The_Other_Side.jpg"
+  },
+  {
+    "id": "photo-67",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Pas Plus Haut Que Le Bord",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Pas_Plus_Haut_Que_Le_Bord.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Night/Pas_Plus_Haut_Que_Le_Bord.jpg"
+  },
+  {
+    "id": "photo-68",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Spy",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Spy.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Night/Spy.jpg"
+  },
+  {
+    "id": "photo-69",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "In Their Own World Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/In_Their_Own_World_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Night/In_Their_Own_World_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/In_Their_Own_World_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-70",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Montevideo Rambla Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Montevideo_Rambla_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Night/Montevideo_Rambla_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Montevideo_Rambla_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Montevideo_Rambla_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-71",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Pub Seasons Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Pub_Seasons_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Night/Pub_Seasons_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Pub_Seasons_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Pub_Seasons_3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Pub_Seasons_4.JPG.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-72",
+    "category": "photo",
+    "subcategory": "Night",
+    "title": "Tambores Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Night/Tambores_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Night/Tambores_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Tambores_2.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Night/Tambores_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "photo-73",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "A Vision",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/A_Vision.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/A_Vision.jpg"
+  },
+  {
+    "id": "photo-74",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Alien",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Alien.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Alien.jpg"
+  },
+  {
+    "id": "photo-75",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Cabaret Aerial",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Cabaret_Aerial.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Cabaret_Aerial.jpg"
+  },
+  {
+    "id": "photo-76",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Cabaret Curtain Call",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Cabaret_Curtain_Call.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Cabaret_Curtain_Call.jpg"
+  },
+  {
+    "id": "photo-77",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Cabaret Possessed",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Cabaret_Possessed.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Cabaret_Possessed.jpg"
+  },
+  {
+    "id": "photo-78",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Dangerously Drunk",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Dangerously_Drunk.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Dangerously_Drunk.jpg"
+  },
+  {
+    "id": "photo-79",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Dirty Martini",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Dirty_Martini.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Dirty_Martini.jpg"
+  },
+  {
+    "id": "photo-80",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Dirty Rita",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Dirty_Rita.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Dirty_Rita.jpg"
+  },
+  {
+    "id": "photo-81",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Legs Horizon",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Legs_Horizon.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Legs_Horizon.jpg"
+  },
+  {
+    "id": "photo-82",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Ribbon Cross",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Ribbon_Cross.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Ribbon_Cross.jpg"
+  },
+  {
+    "id": "photo-83",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Ribbon Wolf",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Ribbon_Wolf.jpg",
+    "mediaType": "image",
+    "mediaUrl": "./photo/Shows/Ribbon_Wolf.jpg"
+  },
+  {
+    "id": "photo-84",
+    "category": "photo",
+    "subcategory": "Shows",
+    "title": "Danse Macabre Series",
+    "role": "Photographer",
+    "year": "2026",
+    "coverImage": "./photo/Shows/Danse_Macabre_1.jpg",
+    "mediaType": "image",
+    "mediaList": [
+      {
+        "type": "image",
+        "url": "./photo/Shows/Danse_Macabre_1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "./photo/Shows/Danse_Macabre_2.jpg"
+      }
+    ]
+  }
+]

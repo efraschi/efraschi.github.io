@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Fraschini | Director of Photography</title>
+
+    <!-- Typographie Cinématique -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* === VARIABLES & RESET === */
+        :root {
+            --bg-color: #050505;
+            /* Noir profond */
+            --surface-color: #0d0d0d;
+            --text-main: #f5f5f5;
+            /* Blanc cassé */
+            --text-muted: #888888;
+            --accent: #ffffff;
+            --font-title: 'Cinzel', serif;
+            --font-text: 'Inter', sans-serif;
+            --transition-smooth: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            /* Défilement fluide vers les sections */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === NAVIGATION === */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.9) 0%, rgba(5, 5, 5, 0) 100%);
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-family: var(--font-title);
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 5%;
+        }
+
+        .hero h1 {
+            font-family: var(--font-title);
+            font-size: clamp(3rem, 6vw, 6rem);
+            font-weight: 400;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUP 1.2s forwards 0.3s;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeInUP 1.2s forwards 0.6s;
+        }
+
+        /* === SECTIONS === */
+        section {
+            padding: 8rem 5%;
+        }
+
+        .section-title {
+            font-family: var(--font-title);
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+
+        /* === MASONRY LAYOUT === */
+        .grid {
+            column-count: 3;
+            column-gap: 20px;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                column-count: 1;
+            }
+        }
+
+        /* Item du portfolio */
+        .project-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: var(--surface-color);
+            opacity: 0;
+            /* Pour l'animation au scroll */
+            transform: translateY(30px);
+            transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+        }
+
+        .series-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            opacity: 0.6;
+            padding: 6px;
+            border-radius: 4px;
+            z-index: 5;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(4px);
+            transition: opacity 0.3s ease;
+        }
+
+        .project-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            /* Respects original aspect ratio */
+            display: block;
+            transition: transform 0.8s ease;
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .project-item:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-item:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        .project-title {
+            font-family: var(--font-title);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-details {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* === FILTERS === */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--text-muted);
+            color: var(--text-muted);
+            padding: 0.5rem 1.5rem;
+            font-family: var(--font-text);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            color: var(--bg-color);
+            background-color: var(--text-main);
+            border-color: var(--text-main);
+        }
+
+        /* === CONTACT SECTION === */
+        #contact {
+            text-align: center;
+            background-color: var(--surface-color);
+            padding: 10rem 5%;
+        }
+
+        .contact-text {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            border: 1px solid var(--text-muted);
+            color: var(--text-main);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--text-main);
+            color: var(--bg-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #444;
+            letter-spacing: 1px;
+        }
+
+        /* === MODAL (Lecteur Vidéo / Image Plein Écran) === */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-content {
+            width: 90%;
+            max-width: 1200px;
+            max-height: 95vh;
+            background-color: transparent;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modalContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .close-modal {
+            position: fixed; /* Keep it fixed so it doesn't scroll away */
+            top: 20px;
+            right: 30px;
+            color: var(--text-main);
+            font-size: 2rem;
+            cursor: pointer;
+            font-family: var(--font-text);
+            z-index: 1100;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        @keyframes fadeInUP {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Carousel Controls */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 2rem;
+            z-index: 10;
+            transition: background 0.3s ease;
+        }
+        .carousel-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .carousel-btn.prev {
+            left: -60px;
+        }
+        .carousel-btn.next {
+            right: -60px;
+        }
+        .carousel-counter {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-muted);
+            font-family: var(--font-text);
+            font-size: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+
+        @media (max-width: 768px) {
+            .carousel-btn.prev { left: 0; }
+            .carousel-btn.next { right: 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <a href="#" class="logo">E. Fraschini</a>
+        <nav>
+            <a href="#dop">Cinematography</a>
+            <a href="#photo">Photography</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Eduardo Fraschini</h1>
+        <p>Director of Photography</p>
+    </section>
+
+    <!-- SECTION DOP -->
+    <section id="dop">
+        <h2 class="section-title">Cinematography</h2>
+        <div class="grid" id="dop-grid">
+            <!-- DOP projects will be injected here by JS -->
+        </div>
+    </section>
+
+    <!-- SECTION PHOTO -->
+    <section id="photo">
+        <h2 class="section-title">Photography</h2>
+        <div id="photo-filters" class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <!-- Filter buttons will be injected here by JS -->
+        </div>
+        <div class="grid" id="photo-grid">
+            <!-- Photo projects will be injected here by JS -->
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">
+            Eduardo Fraschini<br>
+            <a href="mailto:eduardo@charruapictures.com"
+                style="color: var(--text-muted); text-decoration: none;">eduardo@charruapictures.com</a><br>
+            <a href="tel:+33659621967" style="color: var(--text-muted); text-decoration: none;">+33 6 59 62 19 67</a>
+        </p>
+        <a href="mailto:eduardo@charruapictures.com" class="contact-btn">Send a message</a>
+    </section>
+
+    <footer class="footer">
+        &copy; 2024 Eduardo Fraschini. All rights reserved.
+    </footer>
+
+    <!-- MODAL (Pour afficher la vidéo ou l'image en grand) -->
+    <div class="modal" id="mediaModal">
+        <div class="modal-content">
+            <div class="close-modal" id="closeModal">Close ✕</div>
+            <div id="modalContainer"></div>
+        </div>
+    </div>
+
+    <script>
+
+
+        /* =========================================================
+           2. LOGIQUE JAVASCRIPT
+           ========================================================= */
+
+        const dopGrid = document.getElementById('dop-grid');
+        const photoGrid = document.getElementById('photo-grid');
+        const modal = document.getElementById('mediaModal');
+        const modalContainer = document.getElementById('modalContainer');
+        const closeModal = document.getElementById('closeModal');
+
+        // Fonction pour créer une "carte" projet en HTML
+        function createProjectCard(project) {
+            const card = document.createElement('div');
+            card.classList.add('project-item');
+            if (project.subcategory) {
+                card.dataset.subcategory = project.subcategory;
+            }
+
+            let badgeHtml = '';
+            if (project.mediaList && project.mediaList.length > 1) {
+                badgeHtml = `
+                <div class="series-badge" title="Series">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="14" height="14" rx="2" ry="2"></rect>
+                        <path d="M7 21h14a2 2 0 0 0 2-2V7"></path>
+                    </svg>
+                </div>`;
+            }
+
+            card.innerHTML = `
+                ${badgeHtml}
+                <img src="${project.coverImage}" alt="${project.title}" class="project-image" loading="lazy">
+                <div class="project-overlay">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-details" style="text-transform: uppercase;">Eduardo Fraschini</p>
+                </div>
+            `;
+
+            // Au clic, on ouvre la modale
+            card.addEventListener('click', () => openModal(project));
+            return card;
+        }
+
+        let currentMediaList = [];
+        let currentIndex = 0;
+
+        function updateModalContent() {
+            modalContainer.innerHTML = '';
+            let currentMedia = currentMediaList[currentIndex];
+            
+            if (currentMedia.type === 'video') {
+                if (currentMedia.url.endsWith('.mp4') || currentMedia.url.endsWith('.webm')) {
+                    modalContainer.innerHTML = `<video src="${currentMedia.url}" controls autoplay style="width:100%; max-height:95vh; object-fit:contain; outline:none; background:#000;"></video>`;
+                } else {
+                    modalContainer.innerHTML = `<iframe src="${currentMedia.url}" allow="autoplay; fullscreen" allowfullscreen style="width:100%; height:80vh; border:none;"></iframe>`;
+                }
+            } else if (currentMedia.type === 'image') {
+                const img = document.createElement('img');
+                img.src = currentMedia.url;
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '95vh';
+                img.style.objectFit = 'contain';
+                img.style.display = 'block';
+                modalContainer.appendChild(img);
+            }
+
+            if (currentMediaList.length > 1) {
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'carousel-btn prev';
+                prevBtn.innerHTML = '&#10094;';
+                prevBtn.onclick = (e) => { e.stopPropagation(); navigateCarousel(-1); };
+                
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'carousel-btn next';
+                nextBtn.innerHTML = '&#10095;';
+                nextBtn.onclick = (e) => { e.stopPropagation(); navigateCarousel(1); };
+                
+                const counter = document.createElement('div');
+                counter.className = 'carousel-counter';
+                counter.innerText = `${currentIndex + 1} / ${currentMediaList.length}`;
+
+                modalContainer.appendChild(prevBtn);
+                modalContainer.appendChild(nextBtn);
+                modalContainer.appendChild(counter);
+            }
+        }
+
+        function navigateCarousel(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = currentMediaList.length - 1;
+            if (currentIndex >= currentMediaList.length) currentIndex = 0;
+            updateModalContent();
+        }
+
+        // Fonction pour ouvrir la modale
+        function openModal(project) {
+            if (project.mediaList && project.mediaList.length > 0) {
+                currentMediaList = project.mediaList;
+            } else {
+                currentMediaList = [{ type: project.mediaType, url: project.mediaUrl }];
+            }
+            currentIndex = 0;
+            updateModalContent();
+            modal.classList.add('active');
+        }
+
+        // Fermer la modale
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            modalContainer.innerHTML = ''; // Coupe la vidéo
+        });
+
+        // Fermer la modale en cliquant en dehors
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                modalContainer.innerHTML = '';
+            }
+        });
+
+        // Fermer avec la touche Echap
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape") {
+                modal.classList.remove('active');
+                modalContainer.innerHTML = '';
+            }
+        });
+
+        // Afficher les projets dans la bonne section
+        function renderProjects(projectsData) {
+            projectsData.forEach(project => {
+                const card = createProjectCard(project);
+                if (project.category === 'dop') {
+                    dopGrid.appendChild(card);
+                } else if (project.category === 'photo') {
+                    photoGrid.appendChild(card);
+                }
+            });
+            setupScrollAnimations();
+        }
+
+        fetch('projects.json')
+            .then(response => response.json())
+            .then(async data => {
+                try {
+                    const orderRes = await fetch('order.txt');
+                    if (orderRes.ok) {
+                        const text = await orderRes.text();
+                        const orderList = text.split('\n').map(l => l.trim()).filter(l => l);
+                        const orderMap = new Map();
+                        orderList.forEach((title, i) => orderMap.set(title, i));
+                        
+                        data.sort((a, b) => {
+                            const indexA = orderMap.has(a.title) ? orderMap.get(a.title) : 999999;
+                            const indexB = orderMap.has(b.title) ? orderMap.get(b.title) : 999999;
+                            return indexA - indexB;
+                        });
+                    }
+                } catch (e) {
+                    console.log("Could not load order.txt");
+                }
+                
+                renderProjects(data);
+                setupFilters(data);
+            })
+            .catch(error => console.error("Loading error:", error));
+
+        // Filters setup
+        function setupFilters(projectsData) {
+            const photoFilters = document.getElementById('photo-filters');
+            const subcategories = new Set();
+
+            projectsData.forEach(p => {
+                if (p.category === 'photo' && p.subcategory) {
+                    subcategories.add(p.subcategory);
+                }
+            });
+
+            // Sort subcategories alphabetically
+            const sortedSubcategories = Array.from(subcategories).sort();
+
+            sortedSubcategories.forEach(sub => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = sub;
+                btn.dataset.filter = sub;
+                photoFilters.appendChild(btn);
+            });
+
+            // Add event listeners
+            const btns = photoFilters.querySelectorAll('.filter-btn');
+            btns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    btns.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    filterPhotos(e.target.dataset.filter);
+                });
+            });
+        }
+
+        function filterPhotos(filter) {
+            const items = photoGrid.querySelectorAll('.project-item');
+            items.forEach(item => {
+                if (filter === 'all' || item.dataset.subcategory === filter) {
+                    item.style.display = 'block';
+                    // Optional: slight animation re-trigger
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 50);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Animation "Fade-in" au défilement (Intersection Observer)
+        function setupScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Ne l'anime qu'une fois
+                    }
+                });
+            }, observerOptions);
+
+            const items = document.querySelectorAll('.project-item');
+            items.forEach(item => observer.observe(item));
+        }
+    </script>
+</body>
+
+</html>
