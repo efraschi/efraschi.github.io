@@ -137,6 +137,28 @@
             width: 100%;
         }
 
+        #dop-grid {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .dop-video-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            aspect-ratio: 16 / 9;
+            cursor: default !important;
+            padding: 0;
+            background-color: transparent !important;
+        }
+
+        .dop-video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
         @media (max-width: 1024px) {
             .grid {
                 column-count: 2;
@@ -422,7 +444,7 @@
     <!-- SECTION DOP -->
     <section id="dop">
         <h2 class="section-title">Cinematography</h2>
-        <div class="grid" id="dop-grid">
+        <div id="dop-grid">
             <!-- DOP projects will be injected here by JS -->
         </div>
     </section>
@@ -444,11 +466,11 @@
         <h2 class="section-title">Contact</h2>
         <p class="contact-text">
             Eduardo Fraschini<br>
-            <a href="mailto:eduardo@charruapictures.com"
-                style="color: var(--text-muted); text-decoration: none;">eduardo@charruapictures.com</a><br>
+            <a href="mailto:contact@eduardofraschini.com"
+                style="color: var(--text-muted); text-decoration: none;">contact@eduardofraschini.com</a><br>
             <a href="tel:+33659621967" style="color: var(--text-muted); text-decoration: none;">+33 6 59 62 19 67</a>
         </p>
-        <a href="mailto:eduardo@charruapictures.com" class="contact-btn">Send a message</a>
+        <a href="mailto:contact@eduardofraschini.com" class="contact-btn">Send a message</a>
     </section>
 
     <footer class="footer">
@@ -478,6 +500,13 @@
 
         // Fonction pour créer une "carte" projet en HTML
         function createProjectCard(project) {
+            if (project.category === 'dop') {
+                const wrapper = document.createElement('div');
+                wrapper.classList.add('project-item', 'dop-video-wrapper');
+                wrapper.innerHTML = `<iframe src="${project.mediaUrl}" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>`;
+                return wrapper;
+            }
+
             const card = document.createElement('div');
             card.classList.add('project-item');
             if (project.subcategory) {
