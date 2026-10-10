@@ -367,7 +367,8 @@
         }
 
         .close-modal {
-            position: fixed; /* Keep it fixed so it doesn't scroll away */
+            position: fixed;
+            /* Keep it fixed so it doesn't scroll away */
             top: 20px;
             right: 30px;
             color: var(--text-main);
@@ -375,7 +376,7 @@
             cursor: pointer;
             font-family: var(--font-text);
             z-index: 1100;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         @keyframes fadeInUP {
@@ -404,15 +405,19 @@
             z-index: 10;
             transition: background 0.3s ease;
         }
+
         .carousel-btn:hover {
             background: rgba(0, 0, 0, 0.8);
         }
+
         .carousel-btn.prev {
             left: -60px;
         }
+
         .carousel-btn.next {
             right: -60px;
         }
+
         .carousel-counter {
             position: absolute;
             bottom: -40px;
@@ -421,12 +426,17 @@
             color: var(--text-muted);
             font-family: var(--font-text);
             font-size: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         @media (max-width: 768px) {
-            .carousel-btn.prev { left: 0; }
-            .carousel-btn.next { right: 0; }
+            .carousel-btn.prev {
+                left: 0;
+            }
+
+            .carousel-btn.next {
+                right: 0;
+            }
         }
     </style>
 </head>
@@ -435,19 +445,13 @@
 
     <!-- HEADER / NAVIGATION -->
     <header>
-        <a href="#" class="logo">E. Fraschini</a>
+        <a href="#" class="logo">Eduardo Fraschini</a>
         <nav>
             <a href="#dop">Cinematography</a>
             <a href="#photo">Photography</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Eduardo Fraschini</h1>
-        <p>Director of Photography</p>
-    </section>
 
     <!-- SECTION DOP -->
     <section id="dop">
@@ -482,7 +486,7 @@
     </section>
 
     <footer class="footer">
-        &copy; 2024 Eduardo Fraschini. All rights reserved.
+        &copy; 2026 Eduardo Fraschini. All rights reserved.
     </footer>
 
     <!-- MODAL (Pour afficher la vidéo ou l'image en grand) -->
@@ -552,7 +556,7 @@
         function updateModalContent() {
             modalContainer.innerHTML = '';
             let currentMedia = currentMediaList[currentIndex];
-            
+
             if (currentMedia.type === 'video') {
                 if (currentMedia.url.endsWith('.mp4') || currentMedia.url.endsWith('.webm')) {
                     modalContainer.innerHTML = `<video src="${currentMedia.url}" controls autoplay style="width:100%; max-height:95vh; object-fit:contain; outline:none; background:#000;"></video>`;
@@ -574,12 +578,12 @@
                 prevBtn.className = 'carousel-btn prev';
                 prevBtn.innerHTML = '&#10094;';
                 prevBtn.onclick = (e) => { e.stopPropagation(); navigateCarousel(-1); };
-                
+
                 const nextBtn = document.createElement('button');
                 nextBtn.className = 'carousel-btn next';
                 nextBtn.innerHTML = '&#10095;';
                 nextBtn.onclick = (e) => { e.stopPropagation(); navigateCarousel(1); };
-                
+
                 const counter = document.createElement('div');
                 counter.className = 'carousel-counter';
                 counter.innerText = `${currentIndex + 1} / ${currentMediaList.length}`;
@@ -654,7 +658,7 @@
                         const orderList = text.split('\n').map(l => l.trim()).filter(l => l);
                         const orderMap = new Map();
                         orderList.forEach((title, i) => orderMap.set(title, i));
-                        
+
                         data.sort((a, b) => {
                             const indexA = orderMap.has(a.title) ? orderMap.get(a.title) : 999999;
                             const indexB = orderMap.has(b.title) ? orderMap.get(b.title) : 999999;
@@ -664,7 +668,7 @@
                 } catch (e) {
                     console.log("Could not load order.txt");
                 }
-                
+
                 renderProjects(data);
                 setupFilters(data);
             })
